@@ -207,6 +207,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-prod .s-hero h1, .s-prod .s-hero .s-lead { overflow-wrap: normal; word-break: normal; }
 .s-prod .s-hero h1 { font-size: clamp(2.9rem, 7.5vw, 5.2rem); line-height: 1.02; }
 .s-prod .s-hero .s-lead { font-size: clamp(1rem, 1.6vw, 1.2rem); }
-.s-prod .s-send { flex-wrap: wrap; }
-.s-prod .s-send .s-btn--wide { flex: 1 1 100%; }
-.s-prod .s-send .s-btn--ghost { flex: 1 1 0; text-align: center; }
+.s-prod .s-send { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.s-prod .s-send .s-btn--wide { grid-column: 1 / -1; flex: none; }
+.s-prod .s-send .s-btn--ghost { text-align: center; }
